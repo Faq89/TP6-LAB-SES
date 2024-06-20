@@ -56,9 +56,6 @@ function App() {
         }
     };
 
-    useEffect(() => {
-        fetchInfo();
-    }, []);
 
     return (
         <div>
@@ -66,10 +63,39 @@ function App() {
             {view === 'register' && (
                 <div>
                     <h2>Registrar</h2>
-                    <input type="text" placeholder="Usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
-                    <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
-                    <input type="text" placeholder="Nombre" value={name} onChange={(e) => setName(e.target.value)} />
-                    <input type="text" placeholder="Teléfono" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                    <label>
+                        Usuario
+                        <input
+                            type="text"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                        />
+                    </label>
+                    <label>
+                        Contraseña
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                    </label>
+                    <label>
+                        Nombre
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+                    </label>
+                    <label>
+                        Teléfono
+                        <input
+                            type="text"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                        />
+                    </label>
+
                     <button onClick={handleRegister}>Registrar</button>
                     <button onClick={() => setView('login')}>Ir a Login</button>
                 </div>
@@ -77,8 +103,23 @@ function App() {
             {view === 'login' && (
                 <div>
                     <h2>Login</h2>
-                    <input type="text" placeholder="Usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
-                    <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
+                    <label>
+                        Usuario
+                        <input
+                            type="text"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                        />
+                    </label>
+                    <label>
+                        Contraseña
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                    </label>
+
                     <button onClick={handleLogin}>Login</button>
                     <button onClick={() => setView('register')}>Ir a Registrar</button>
                 </div>
