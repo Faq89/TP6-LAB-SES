@@ -1,0 +1,76 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+input[type='text'],
+input[type='password'] {
+    margin-top: 10px; 
+}
+
+#root {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin: 8px 0;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px; 
+    min-width: 150px; 
+    height: 60px; 
+    cursor: pointer;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+button:hover {
+    background-color: #ddd;
+    padding-top: 100 px;
+}
+
+form {
+    width: 100%;
+    text-align: center; 
+   
+}
+
+form button[type='submit'] {
+    font-weight: bold;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.message {
+    font-style: bold;
+    text-align: center;
+}
+
+
+p {
+    text-align: center;  
+}
